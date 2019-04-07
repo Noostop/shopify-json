@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <h5>这个是测试自动部署</h5>
+    <Hello msg="Hello" />
   </div>
 </template>
 
@@ -13,7 +11,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Hello: HelloWorld
   }
 }
 </script>

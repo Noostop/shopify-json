@@ -8,5 +8,3 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
-
-// git push heroku master

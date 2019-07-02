@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    <Hello msg="Hello" />
+    <h1>{{ title }}</h1>
+    <input type="text" name="name" v-model="title">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
@@ -10,8 +13,21 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
+  data() {
+    return {
+      title: 'Hello Word'
+    }
+  },
   components: {
-    Hello: HelloWorld
+    HelloWorld
   }
 }
 </script>
+
+<style lang="scss">
+  $color: red;
+
+  .home {
+    color: $color;
+  }
+</style>
